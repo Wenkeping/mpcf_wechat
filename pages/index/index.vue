@@ -22,25 +22,9 @@
 					</view>
 					<view class="location">距离您622m</view>
 				</view>
-				
-			</view>
-			<!-- 滚动公告栏 begin -->
-			<view class="notices">
-				<swiper class="swiper" autoplay vertical :interval="3000" :duration="1000" circular>
-					<swiper-item v-for="(notice, index) in notices" :key="index">
-						<view class="swiper-item">
-							<image :src="notice.image" class="image"></image>
-							<view class="content">{{ notice.content }}</view>
-						</view>
-					</swiper-item>
-				</swiper>
-				<view class="more">
-					<text>更多</text>
-					<image src="/static/images/common/gray_arrow_down.png" class="down-icon"></image>
-				</view>
 			</view>
 		</view>
-		<!-- 滚动公告栏 end -->
+		
 		<view class="main">
 			<!-- 左侧菜单 begin -->
 			<scroll-view class="menu-bar" scroll-y scroll-with-animation>
@@ -63,14 +47,7 @@
 								<image :src="ad" class="w-100" mode="widthFix"></image>
 							</swiper-item>
 						</swiper>
-						<!-- 广告栏1 end -->
-						<!-- 广告栏2 begin -->
-						<swiper class="ads2" :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" circular>
-							<swiper-item v-for="(ad, index) in ads2" :key="index">
-								<image :src="ad" class="w-100" mode="widthFix"></image>
-							</swiper-item>
-						</swiper>
-						<!-- 广告栏2 end -->
+						<!-- 广告栏1 end -->						
 					</view>
 					<!-- 商品 begin -->
 					<view class="products-list" v-for="(category, index) in categories" :key="index" :id="`products-${category.id}`">

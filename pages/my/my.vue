@@ -15,7 +15,7 @@
 			<!-- member card end -->
 		</view>
 		
-		<list-cell hover arrow @click="addresses">
+		<list-cell hover arrow @click="addresses" style="width: 690rpx;margin-left: 30rpx;border-radius: 5px;">
 			<view class="list-cell-wrapper">
 				<view view="title">收货地址</view>
 			</view>
