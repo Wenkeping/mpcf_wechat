@@ -111,7 +111,7 @@
 					<view class="flex-container-step">
 					    <view class="flex-item-step" style="background-color: #DBA871;width: 50rpx;border-radius: 5px;">
 						  <text style="color:#FFFFFF;margin-left: 10rpx;">3</text>
-					      <text style="font-size:5rpx;color:#999999"">/9</text> 
+					      <text style="font-size:5rpx;color:#999999">/9</text> 
 						</view>
 						 <view class="flex-item-step">加入盐拌匀。</view> 
 					</view>
@@ -132,6 +132,8 @@
 			</view>
 			<button type="primary" class="add-cart-btn" @tap="addToCart">加入购物袋</button>
 		</view>
+		
+		
 	</modal>
 </template>
 

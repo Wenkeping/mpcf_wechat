@@ -1,11 +1,6 @@
 <template>
 	<view class="container">
-		<view class="navbar">
-			<button type="default" plain class="talk-btn">
-				<image src="/static/images/order/order_icon_talk2.0.png"></image>
-				<view>想对你说</view>
-			</button>
-		</view>
+		
 		<view class="tabbar">
 			<view class="item" :class="{active: !tabIndex}" @tap="switchTab(0)">当前订单</view>
 			<view class="item" :class="{active: tabIndex}" @tap="switchTab(1)">历史订单</view>
@@ -26,18 +21,7 @@
 			<!-- 历史订单 begin -->
 			<swiper-item @touchmove.stop="handleSwiperItemChange">
 				<view class="history-order">
-					<view class="menu">
-						<view class="flex-fill d-flex justify-content-start">
-							<view class="item" :class="{active: !orderMenuIndex}" @tap="switchMenuTab(0)">门店订单</view>
-							<view class="item" :class="{active: orderMenuIndex}" @tap="switchMenuTab(1)">百货订单</view>
-						</view>
-						<view class="item" v-show="batchInvoiceVisible">
-							<image src="/static/images/order/batch_invoice_icon.png"></image>
-							<view>批量开票</view>
-						</view>
-					</view>
 					<swiper :current="orderMenuIndex" :duration="300" :show-scrollbar="false" class="history-order-swiper">
-						<!-- 门店订单 begin -->
 						<swiper-item @touchmove.stop="handleSwiperItemChange">
 							<scroll-view scroll-y="true" class="orders-scroll">
 								<view class="wrapper">
@@ -64,26 +48,12 @@
 													￥{{ order.total_fee }}
 												</view>
 											</view>
-											<view class="action">
-												<button type="default" hover-class="none">开发票</button>
-												<button type="default" hover-class="none">查看评论</button>
-												<button type="primary" plain hover-class="none">再来一单</button>
-											</view>
 										</navigator>
 									</view>
 								</view>
 							</scroll-view>
 						</swiper-item>
 						<!-- 门店订单 end -->
-						<!-- 百货订单 begin -->
-						<swiper-item @touchmove.stop="handleSwiperItemChange">
-							<view class="store-order-wrapper">
-								<image src="/static/images/order/default_img_order.png"></image>
-								<view>您还没有下单</view>
-								<view>快去百货商城逛逛吧</view>
-							</view>
-						</swiper-item>
-						<!-- 百货订单 end -->
 					</swiper>
 				</view>
 			</swiper-item>
@@ -292,7 +262,7 @@ page {
 .orders-scroll {
 	width: 100%;
 	height: 100%;
-	padding-top: 104rpx;
+	padding-top: 50rpx;
 }
 
 .order-list {

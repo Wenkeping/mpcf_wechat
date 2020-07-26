@@ -11,17 +11,15 @@
 				<navigator class="item" open-type="switchTab" url="/pages/index/index" hover-class="none">
 					<image src="/static/images/home/home_icon_ziqu1.png" mode="widthFix"></image>
 					<view class="wenyue-font">门店自取</view>
-					<view class="text-color-assist">下单免排队</view>
 				</navigator>
 				<navigator class="item" open-type="navigate" url="/pages/addresses/addresses" hover-class="none">
 					<image src="/static/images/home/home_icon_waimai1.png" mode="widthFix"></image>
 					<view class="wenyue-font">外卖</view>
-					<view class="text-color-assist">无需接触 送喜到家</view>
 				</navigator>
 			</view>
 			<!-- section-2 end -->
 			<!-- section-2 begin -->
-			<view class="section-2">
+			<!-- <view class="section-2">
 				<navigator class="item" open-type="switchTab" url="/pages/mart/mart" hover-class="none">
 					<view class="title">
 						<image src="/static/images/home/home_icon_baihuo1.png"></image>
@@ -36,23 +34,8 @@
 					</view>
 					<view class="tips">50份起送</view>
 				</navigator>
-			</view>
+			</view> -->
 			<!-- section-2 end -->
-			<view class="section-3">
-				<navigator class="my-integral" open-type="navigate" url="/pages/integrals/mall" hover-class="none">
-					<view class="integrals">
-						<view>我的积分</view>
-						<view class="neutra-font">63</view>
-					</view>
-					<view class="tips">
-						可兑换喜茶劵和丰富灵感周边
-					</view>
-				</navigator>
-				<navigator class="my-code" open-type="navigate" url="/pages/my/code" hover-class="none">
-					<image src="/static/images/home/home_icon_erweima.png"></image>
-					<view>会员码</view>
-				</navigator>
-			</view>
 		</view>
 	</view>
 </template>
