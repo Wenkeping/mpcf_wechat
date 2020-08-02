@@ -41,13 +41,13 @@
 			<scroll-view class="product-section" scroll-y scroll-with-animation :scroll-top="productsScrollTop" @scroll="productsScroll">
 				<view class="wrapper">
 					<view id="ads">
-						<!-- 广告栏1 begin -->
+						<!-- 广告栏 begin -->
 						<swiper class="ads1" :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" circular>
 							<swiper-item v-for="(ad, index) in ads1" :key="index">
 								<image :src="ad" class="w-100" mode="widthFix"></image>
 							</swiper-item>
 						</swiper>
-						<!-- 广告栏1 end -->						
+						<!-- 广告栏 end -->						
 					</view>
 					<!-- 商品 begin -->
 					<view class="products-list" v-for="(category, index) in categories" :key="index" :id="`products-${category.id}`">
@@ -130,15 +130,6 @@
 					"http://5b0988e595225.cdn.sohucs.com/images/20190223/a4aa485d841e4bd29bbc415755060cc0.gif",
 					"/static/images/category/ads/scy03.png",
 					"http://img.yxad.cn/images/20180820/2f733568ce2343fd97412fba78d9fc7c.jpeg"
-				],
-				ads2: [
-					"http://img3.imgtn.bdimg.com/it/u=1857833659,401834348&fm=26&gp=0.jpg",
-					"http://img2.imgtn.bdimg.com/it/u=595405274,3145131384&fm=26&gp=0.jpg",
-					"http://img4.imgtn.bdimg.com/it/u=3079206903,2224090061&fm=26&gp=0.jpg",
-					"http://n.sinaimg.cn/translate/75/w560h315/20180822/Mn5D-hhzsnec2099511.gif"
-					
-					
-					
 				],
 				productModalVisible: false,
 				cartPopupShow: false,

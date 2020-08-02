@@ -1,10 +1,7 @@
 <template>
 	<view class="container">
 		<view class="header">
-			<button type="default" plain class="service-btn">
-				<image src="/static/images/order/order_icon_service.png" />
-				<text>联系客服</text>
-			</button>
+			
 		</view>
 		<view class="content" v-if="Object.keys(order).length>0">
 			<view class="order-box">
@@ -31,16 +28,12 @@
 							<view class="d-flex align-items-center mt-40" v-for="(item, index) in order.items" :key="index">
 								<view class="flex-fill d-flex flex-column">
 									<view class="font-size-base mb-10">{{ item.sname }}</view>
-									<view class="font-size-extra-sm text-color-assist">
-										{{ materialsText(item.materials) }}
-									</view>
 								</view>
 								<view class="flex-shrink-0 font-weight-bold ml-40">x{{ item.quantity }}</view>
 								<view class="flex-shrink-0 font-weight-bold ml-40">￥{{ item.price }}</view>
 							</view>
 							<view class="d-flex justify-content-between align-items-center mt-40 pb-30 border-dashed">
-								<view>商品总价</view>
-								<view>￥{{ order.payment }}</view>
+								
 							</view>
 							<view class="d-flex justify-content-between align-items-center font-size-lg font-weight-bold mt-30 mb-40">
 								<view>合计</view>
@@ -50,20 +43,12 @@
 					</list-cell>
 					<list-cell padding="30rpx 40rpx" last bgcolor="#f6f6f6" style="border-radius: 0 0 30rpx 30rpx;">
 						<view class="w-100 d-flex flex-column font-size-extra-sm text-color-assist">
-							<view class="mb-10">如需退款，请致电门店</view>
 							<view class="mb-10">下单时间：{{ order.paid_at }}</view>
 							<view class="mb-10">取茶号：{{ order.pickup_no }}</view>
 							<view class="mb-10">订单编号：{{ order.no }}</view>
 							<view class="mb-10">备注信息：{{ order.remarks }}</view>
 						</view>
 					</list-cell>
-				</view>
-				<view class="order-invoice font-size-base d-flex justify-content-between align-items-center">
-					<view>订单发票</view>
-					<view class="text-color-primary d-flex align-items-center">
-						<view>立即开票</view>
-						<image src="/static/images/common/common_icon_jump_gold.png" class="jump-icon"></image>
-					</view>
 				</view>
 			</view>
 		</view>
@@ -165,23 +150,9 @@
 	border-bottom: 1rpx dashed $border-color;
 }
 
-.order-info {
-	border-radius: 0 0 30rpx 30rpx;
-	box-shadow: 0 0 10rpx 0 rgba($color: #333, $alpha: 0.1);
-	margin-bottom: 30rpx;
-}
 
-.order-invoice {
-	padding: 30rpx 40rpx;
-	border-radius: 30rpx;
-	box-shadow: 0 0 10rpx 0 rgba($color: #333, $alpha: 0.1);
-	margin-bottom: 60rpx;
-	background-color: #F6F6F6;
-}
 
-.jump-icon {
-	width: 24rpx;
-	height: 48rpx;
-	margin-left: 20rpx;
-}
+
+
+
 </style>

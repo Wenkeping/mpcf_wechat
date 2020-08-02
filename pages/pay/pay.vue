@@ -5,12 +5,8 @@
 				<text class="mr-20">联系电话</text>
 				<text>18666610000</text>
 			</view>
-			<button type="primary" plain class="font-size-sm line-height-1">自动填写</button>
 		</view>
-		<view class="bg-white p-30 mb-20">
-			<view class="font-size-medium font-weight-bold mb-30">取餐时间</view>
-			<view class="text-color-primary">冰淇淋/鲜食等产品无需等待，可立即向店员领取</view>
-		</view>
+
 		<view class="bg-white pt-30 mb-20">
 			<view class="font-size-medium font-weight-bold mb-30 pl-30">商品列表</view>
 			<list-cell arrow line-right>
@@ -23,15 +19,7 @@
 					<view class="flex-shrink-0 ml-20">共{{ cartNum }}件</view>				
 				</view>
 			</list-cell>
-			<list-cell arrow last>
-				<view class="w-100 d-flex align-items-center justify-content-between">
-					<view class="d-flex align-items-center">
-						<view>喜茶券</view>
-						<view class="coupon-label">劵</view>
-					</view>
-					<view class="text-color-assist">暂无可用</view>
-				</view>
-			</list-cell>
+
 			<list-cell arrow last>
 				<view class="w-100 d-flex align-items-center justify-content-between overflow-hidden">
 					<view class="flex-shrink-0">备注</view>

@@ -82,14 +82,6 @@ export default {
 	display: flex;
 	align-items: center;
 }
-.tui-radius {
-	border-radius: 12rpx;
-	overflow: hidden;
-}
-
-.tui-cell-hover {
-	background: #f7f7f9 !important;
-}
 
 .tui-list-cell::after {
 	content: '';
@@ -98,18 +90,6 @@ export default {
 	bottom: 0;
 	right: 0;
 	left: 0;
-}
-
-.tui-line-left::after {
-	left: 30rpx !important;
-}
-
-.tui-line-right::after {
-	right: 30rpx !important;
-}
-
-.tui-cell-last::after {
-	border-bottom: 0 !important;
 }
 
 .arrow {

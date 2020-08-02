@@ -2,17 +2,15 @@
 	<view class="container">
 		<image class="w-100" src="https://go.cdn.heytea.com/storage/products/2019/12/18/01954797f3fb470cb6ba1606476c658c.png" mode="widthFix"></image>
 		<view class="content">	
-			<!-- member card begin -->
 			<view class="member-card">
 				<view class="info">
-					<image @tap="info" src="https://wx.qlogo.cn/mmopen/vi_32/Hx7MFkCEmZVHziaTTiaHSiaCs4ApnH5CD0nYOhOg1nYUUMYtxMXkL6L4VL5icRfO5w4LGzW5ib0FZicwj2MficyYfZgCw/132" class="avatar"></image>
+					<image src="https://wx.qlogo.cn/mmopen/vi_32/Hx7MFkCEmZVHziaTTiaHSiaCs4ApnH5CD0nYOhOg1nYUUMYtxMXkL6L4VL5icRfO5w4LGzW5ib0FZicwj2MficyYfZgCw/132" class="avatar"></image>
 					<view class="welcome">
 						<view>您好, Moteay</view>
 						<view class="font-size-base">猫仆厨房，欢聚一堂</view>
 					</view>
 				</view>
 			</view>
-			<!-- member card end -->
 		</view>
 		
 		<list-cell hover arrow @click="addresses" style="width: 690rpx;margin-left: 30rpx;border-radius: 5px;">
@@ -40,11 +38,6 @@
 			
 		},
 		methods: {
-			info() {
-				uni.navigateTo({
-					url: '/pages/my/info'
-				})
-			},
 			addresses() {
 				uni.navigateTo({
 					url: '/pages/addresses/addresses'

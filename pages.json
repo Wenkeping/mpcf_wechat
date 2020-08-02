@@ -22,11 +22,6 @@
 			"navigationBarTitleText": "猫仆厨房",
 			"disableScroll": true
 		}
-	}, {
-		"path": "pages/my/info",
-		"style": {
-			"navigationBarTitleText": "个人资料"
-		}
 	},{
 		"path": "pages/addresses/addresses",
 		"style": {
